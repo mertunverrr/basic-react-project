@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+ :root{
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+    --font-weight:500;
+    --font-weight-title:700;
+    --font-size: 13px;
+    --font-family: 'Manrope' , sans-serif;
+ }
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body{
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    background-color: var(--light-grayish-blue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .card{
+    width: 325px;
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 0px 0px 20px 5px var(--grayish-blue);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+ }
+
+
+ .content>img{
+    width: 325px;
+    height: 200px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+ }
+
+ #title{
+    font-weight: var(--font-weight-title);
+    margin: 2em 1.7em;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    color: var(--very-dark-grayish-blue);
+    line-height: 22px;
+ }
+
+ #subText{
+    margin: 1.2em 1.7em;
+    color: var(--desaturated-dark-blue);
+    line-height: 19px;
+ }
+
+ .footer{
+    display: flex;
+    width: 100%;
+    margin: 1em 1.7em;
+    justify-content: space-between;
+    margin-bottom: 2em;
+ }
+
+ .footer>img{
+    border-radius: 50%;
+    width: 40px;
+ }
+
+.name-date{
+    margin-left: -4em;
+ }
+#name{
+    color: var(--very-dark-grayish-blue);
+    font-weight: var(--font-weight-title);
+}
+#date{
+    color: var(--desaturated-dark-blue);
+    margin-top: 0.3em;
+}
+
+.footer>button{
+    border: none;
+    background-color: var(--light-grayish-blue);
+    border-radius: 50%;
+    width: 40px;
+    text-align: center;
+    font-size: 1.5em;
+    margin-right: 2.5em;
+    color: var(--desaturated-dark-blue);
+}
+
+button:hover{
+    cursor: pointer;
+}
+ 
+.share-card{
+    display: flex;
+    justify-content: space-between;
+    width: 325px;
+    padding: 0.8em 1.3em;
+    background-color: var(--very-dark-grayish-blue);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    font-size: 2em;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+}
+
+span{
+    letter-spacing: 3px;
+    color: var(--grayish-blue);
+    font-size: var(--font-size);
+}
+
+.share-card>button{
+    border-radius: 50%;
+    border: none;
+    font-size: 0.8em;
+    width: 35px;
+    color: white;
+    background-color: var(--desaturated-dark-blue);
+}
+
+@media screen and (min-width:768px){
+
+    body{
+        display: flex;
+        flex-direction: row;
+    }
+}

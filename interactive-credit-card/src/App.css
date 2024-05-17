@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+:root{
+    --font-family:'Space Grotesk' , sans-serif ;
+    --font-size: 18px;
+    --font-weight: 500;
+    --active-input-border: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    --input-error: hsl(0, 100%, 66%);
+    --light-grayish-violet: hsl(270, 3%, 87%);
+    --dark-grayish-violet: hsl(279, 6%, 55%);
+    --very-dark-violet: hsl(278, 68%, 11%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-color{
+    background: linear-gradient(to right, transparent 60%, white 25%, rgb(255, 255, 255)), url('assets/bg-main-desktop.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+body{
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+
+}
+
+.card-form{
+    width: 50%;
+    display: flex;
+}
+
+@media screen and (max-width:1000px){
+    body{
+        height: 100%;
+    }
+    .bg-color{
+        background-image: url('./assets/bg-main-mobile.png');
+        height: 325px;
+        width: 100%;
+        background-size: 100% 35%;
+        z-index: -2;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-form{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+    }
+
+}

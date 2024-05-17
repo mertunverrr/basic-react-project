@@ -1,0 +1,82 @@
+:root{
+    --font-family:'Space Grotesk' , sans-serif ;
+    --font-size: 18px;
+    --font-weight: 500;
+    --active-input-border: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    --input-error: hsl(0, 100%, 66%);
+    --light-grayish-violet: hsl(270, 3%, 87%);
+    --dark-grayish-violet: hsl(279, 6%, 55%);
+    --very-dark-violet: hsl(278, 68%, 11%);
+}
+
+input{
+    padding: 0.5em;
+    border-radius: 0.5rem;
+    border: 1px var(--light-grayish-violet) solid;
+    outline: none;
+    color: var(--very-dark-violet);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0.2em;
+    margin-top: 0.5em;
+}
+
+input:focus{
+    border: 1px hsl(278, 94%, 30%) solid;
+}
+input::placeholder{
+    color: var(--light-grayish-violet);
+}
+
+p{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--very-dark-violet);
+}
+
+.name-number{
+    width: 300px;
+}
+
+.date-input{
+    width: 75px;;
+}
+
+#cvcNumber{
+    width: 130px;
+}
+#cvcNumberDiv{
+    margin-left: 10px;
+}
+
+#underForm{
+    display: flex;
+}
+
+button{
+    width: 300px;
+    padding: 1em;
+    font-size: 14px;
+    border-radius: 0.5rem;
+    border: none ;
+    background-color: var(--very-dark-violet);
+    color: white;
+    letter-spacing: 1px;
+    margin-top: 1.5em;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#cardholderDiv,
+#cardNumberDiv{
+    margin-bottom: 1.5em;
+}
+
+.error-border{
+    border-color: hsl(0, 100%, 66%);
+}
+.error-border:focus{
+    border: 1px hsl(0, 100%, 66%) solid;
+}

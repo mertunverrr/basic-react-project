@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root{
+    --orange: hsl(26, 100%, 55%);
+    --pale-orange: hsl(25, 100%, 92%);
+    --very-dark-blue: hsl(220, 13%, 13%);
+    --dark-grayish-blue: hsl(219, 9%, 45%);
+    --grayish-blue: hsl(220, 14%, 75%);
+    --light-grayish-blue: hsl(223, 64%, 96%);
+    --white: hsl(0, 0%, 100%);
+    --black-75opacity-bg: hsl(0, 0%, 0%);
+    --font-size: 16px;
+    --font-weight-1: 400;
+    --font-weight-2:700;
+    --font-family: 'Kumbh Sans' , sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-family);
+    background-color: var(--white);
+}
+.container{
+    padding: 3rem 7.5rem;
+    padding-bottom: 0rem;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-between{
+    display: flex;
+}
+
+.content{
+    margin: 6rem 9rem;
+    margin-bottom: 0;
+    display: flex;
+}
+
+#logo{
+    height:30px;
+    width: 140px;
+    position: relative;
+    top: -10px;
+}
+
+
+#logo:hover{
+    cursor: pointer;
+}
+#categoryHr {
+    position: relative;
+    border: 1px var(--light-grayish-blue) solid;
+    top:35px;
+
+}
+
+.cart-container{
+    z-index: 5;
+    position: relative;
+}
+.content{
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+  }
+  
+  .overlay-before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Koyu bir overlay */
+    z-index: 10; /* Child bileşenin altında olmalı */
+  }
+  
+  .overlay-after {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent; /* Child bileşenin üstünde olmalı ve arka planı orijinal haline getirecek */
+    z-index: 30; /* Child bileşenin üstünde olmalı */
+  }

@@ -1,0 +1,103 @@
+.productInfo{
+    margin-left: 7.5rem;
+    margin-top: 1.5rem;
+}
+.productInfo>h3{
+    color: var(--orange);
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.productInfo>h1{
+    color: var(--very-dark-blue);
+    text-transform: capitalize;
+    margin-top: 1rem;
+}
+#subText{
+    margin-top: 2rem;
+    color: var(--dark-grayish-blue);
+    margin-bottom: 1.5rem;
+}
+#price{
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--very-dark-blue);
+}
+#discount{
+    font-weight: 700;
+    margin-left: 2rem;
+    color: var(--orange);
+    background-color: var(--pale-orange);
+    padding: 0.2rem 0.4rem;
+    font-size: 14px;
+    border-radius: 0.2rem;
+    position: relative;
+    top: -5px;
+}
+#mainPrice{
+    color: var(--grayish-blue);
+    font-weight: 700;
+    margin-top: 0.7rem;
+    text-decoration: line-through;
+    font-size: 15px;
+}
+
+.counter-div{
+    display: flex;
+    flex-direction: row;
+    margin-top:2rem;
+    margin-bottom: 2rem;
+}
+.counter{
+    width: 45px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--orange);
+    background-color: var(--light-grayish-blue);
+    border: none;
+}
+.countNumber{
+    width: 45px;
+    height: 50px;
+    text-align: center;
+    border: none;
+    background-color: var(--light-grayish-blue);
+    font-weight: 700;
+    font-size: 16px;
+    position: relative;
+    top: -1px;
+}
+.plus{
+    border-bottom-right-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+}
+.minus{
+    border-bottom-left-radius: 0.3rem;
+    border-top-left-radius: 0.3rem;
+}
+
+#addToCart{
+    border: none;
+    margin-left: 2rem;
+    height: 50px;
+    width: 200px;
+    background-color: var(--orange);
+    color: white;
+    font-size: 14px;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    box-shadow: 0px 15px 15px var(--pale-orange);
+}
+
+#shoppingCartLogo{
+    position: relative;
+    top: 2px;
+    margin-right: 0.3rem;
+}
+
+#addToCart:hover,
+.counter:hover{
+cursor: pointer;
+filter: brightness(115%);
+}

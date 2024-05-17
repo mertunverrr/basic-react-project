@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --dark-grayish-cyan: hsl(186, 14%, 43%);
+    --grayish-cyan: hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --very-light-grayish-cyan: hsl(180, 22%, 92%);
+    --white: hsl(0, 0%, 100%);
+    --strong-cyan: hsl(172, 67%, 45%);
+    --font-size-inputs: 24px;
+    --font-weights: 700;
+    --font-family: 'Space Mono' , sans-serif;
+}
+
+.display-container{
+    width: 300px;
+    background-color: var(--very-dark-cyan);
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.display-text{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    color: var(--very-light-grayish-cyan);
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+span{
+    color: var(--grayish-cyan);
+    font-size: 12px;
+}
+.calc-display{
+    display: flex;
+    justify-content: space-between;
+}
+
+.calc{
+    color: var(--strong-cyan);
+    font-size: 28px;
+    font-weight: var(--font-weights);
+}
+
+#resetBtn{
+    background-color: hsl(183, 100%, 18%);
+    border: none;
+    font-size: 16px;
+    color: var(--white);
+    font-family: var(--font-family);
+    padding: 0.5rem;
+    font-weight: var(--font-weights);
+    border-radius: 0.5rem;
+    width: 100%;
+    margin-top: 1rem;
+    color: var(--strong-cyan);
+    
+}
+
+#resetBtn:hover{
+    cursor: pointer;
+}

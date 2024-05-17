@@ -1,0 +1,22 @@
+.category-desktop>li{
+    color: var(--dark-grayish-blue);
+    font-weight: 500;
+    list-style: none;
+    margin-left: 3rem;
+    cursor: pointer;
+
+
+}
+.category-desktop{
+    display: flex;
+    margin-left: 3rem;
+    position: absolute;
+
+}
+
+.category-desktop>li:hover{
+    color: var(--very-dark-blue);
+    border-bottom:4px var(--orange) solid;
+    padding-bottom: 52px;
+}
+

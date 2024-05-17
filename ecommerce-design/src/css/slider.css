@@ -1,0 +1,24 @@
+.slider{
+    position: relative;
+}
+.highlights-item{
+    width: 340px;
+    border-radius: 0.7rem;
+    cursor: pointer;
+}
+
+.thumbnail{
+    width: 70px;
+    margin-left: 20px;
+    margin-top: 15px;
+    border-radius: 0.7rem;
+    cursor: pointer;
+}
+.thumbnail.first{
+    margin-left: 0px;
+
+}
+
+.thumbnail:hover{
+    filter: brightness(70%);
+}

@@ -1,0 +1,36 @@
+:root{
+    --font-family:'Space Grotesk' , sans-serif ;
+    --font-size: 18px;
+    --font-weight: 500;
+    --active-input-border: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    --input-error: hsl(0, 100%, 66%);
+    --light-grayish-violet: hsl(270, 3%, 87%);
+    --dark-grayish-violet: hsl(279, 6%, 55%);
+    --very-dark-violet: hsl(278, 68%, 11%);
+}
+
+#successDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#successIcon{
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+#successTitle{
+    font-size: 2em;
+    letter-spacing: 2px;
+    color: var(--very-dark-violet);
+    text-transform: uppercase;
+}
+
+#successSubText{
+    margin-top: 1em;
+    font-size: 1em;
+    text-transform: capitalize;
+    color: var(--dark-grayish-violet);
+}

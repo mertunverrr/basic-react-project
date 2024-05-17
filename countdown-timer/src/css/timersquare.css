@@ -1,0 +1,31 @@
+p{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    text-align: center;
+    color: var(--soft-red);
+    letter-spacing: 1px;
+}
+
+span{
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--soft-red);
+
+}
+.square-calender-top{
+    background: linear-gradient(to bottom , var(--very-dark-blue), var(--dark-desaturated-blue));
+    width: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 125px;
+    border-radius: 1rem;
+    box-shadow: 0px 8px 20px 5px var(--very-dark-mostly-black-blue);
+    border: none;
+}
+.square-calender{
+    width: 125px;
+    margin-left: 3rem;
+}

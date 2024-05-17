@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --dark-grayish-cyan: hsl(186, 14%, 43%);
+    --grayish-cyan: hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --very-light-grayish-cyan: hsl(180, 14%, 90%);
+    --white: hsl(0, 0%, 100%);
+    --strong-cyan: hsl(172, 67%, 45%);
+    --font-size-inputs: 24px;
+    --font-weights: 700;
+    --font-family: 'Space Mono' , sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--light-grayish-cyan);
+    font-family: var(--font-family);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: var(--white);
+    border-radius: 1rem;
+    display: flex;
+    padding: 2rem;
+}
+
+@media screen and ( max-width : 768px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        padding-top: 0.5rem;
+    }
+    .input-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        justify-content: center;
+    }
+    .select-percent{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+    }
+    
+    
+}

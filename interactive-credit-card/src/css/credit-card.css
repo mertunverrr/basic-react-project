@@ -1,0 +1,162 @@
+:root{
+    --font-family:'Space Grotesk' , sans-serif ;
+    --font-size: 18px;
+    --font-weight: 500;
+    --active-input-border: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    --input-error: hsl(0, 100%, 66%);
+    --light-grayish-violet: hsl(270, 3%, 87%);
+    --dark-grayish-violet: hsl(279, 6%, 55%);
+    --very-dark-violet: hsl(278, 68%, 11%);
+}
+
+#cardFront ,
+#cardBack {
+    width: 350px;
+    position: absolute;
+}
+
+#cardLogo{
+    position: absolute;
+    z-index: 1;
+    left: 250px;
+    top: 150px;
+    width: 60px;
+}
+
+#cardFront{
+    left: 225px;
+    top: 130px;
+}
+
+#cardBack{
+    left: 300px;
+    top: 370px;
+}
+
+#frontInfo > p {
+    color: white;
+    letter-spacing: 2px;
+    position: absolute;
+}
+
+#interactiveName {
+    top: 280px;
+    left: 265px;
+    font-weight: 300;
+}
+
+#interactiveNumber {
+    top: 225px;
+    left: 265px;
+    font-size: 22px;
+}
+
+#interactiveDate{
+    top: 280px;
+    left: 500px;
+    font-weight: 300;
+}
+
+#interactiveCVC{
+    position: absolute;
+    color: white;
+    top: 455px;
+    left: 570px;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+
+
+@media screen and (max-width:1000px) {
+    #cardFront ,
+    #cardBack {
+    width: 300px;
+    position: relative;
+    }
+    #cardLogo{
+        width: 50px;
+        left: 175px;
+        position: absolute;
+    }
+    #interactiveCard{
+        display: flex;
+    }
+    #cardFront{
+        left: 50%;
+    }
+    #interactiveName{
+        left: 185px;
+        top: 250px;
+        font-size: 14px;
+    }
+    #interactiveNumber{
+        left: 185px;
+        top: 210px;
+        font-size: 19px;
+    }
+    #interactiveDate{
+        top: 250px;
+        left: 360px;
+        font-size: 14px;
+    }
+
+    #cardBack{
+        top: 25px;
+        left: 20px;
+        z-index: -1;
+    }
+    #interactiveCVC{
+        top: 50px;
+        left: 555px;
+        font-size: 14px;
+    }   
+    @media screen and (max-width:768px) {
+        #cardFront ,
+        #cardBack {
+        width: 275px;
+        position: relative;
+        }
+        #cardLogo{
+            width: 48px;
+            left: 75px;
+            position: absolute;
+        }
+        #interactiveCard{
+            display: flex;
+        }
+        #cardFront{
+            left: 20%;
+        }
+        #interactiveName{
+            left: 85px;
+            top: 245px;
+            font-size: 13px;
+        }
+        #interactiveNumber{
+            left: 85px;
+            top: 210px;
+            font-size: 18px;
+        }
+        #interactiveDate{
+            top: 245px;
+            left: 250px;
+            font-size: 13px;
+        }
+    
+        #cardBack{
+            top: 25px;
+            left: -100px;
+            z-index: -1;
+        }
+        #interactiveCVC{
+            top: 48px;
+            left: 390px;
+            font-size: 13px;
+        }
+        }
+}
+
+
+

@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root{
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+    --white: hsl(0, 0%, 100%);
+    --very-light-grayish-blue: hsl(210, 60%, 98%);
+    --light-grayish-blue-1: hsl(211, 68%, 94%);
+    --light-grayish-blue-2: hsl(205, 33%, 90%);
+    --grayish-blue: hsl(219, 14%, 63%);
+    --dark-grayish-blue: hsl(219, 12%, 42%);
+    --very-dark-blue: hsl(224, 21%, 14%); 
+    --font-size-prgrph: 16px;
+    --font-weight-1:500;
+    --font-weight-2:800;
+    --font-family: 'Plus Jakarta Sans' , sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-family);
+    background-color: var(--blue);
+    background-color: var(--light-grayish-blue-2);
+    font-size: var(--font-size-prgrph);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    width: 700px;
+    margin: 2.8rem 0;
+    background-color: var(--white);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#header>h3{
+    font-weight: var(--font-weight-2);
+    letter-spacing: 1px;
+}
+#notificationsNum{
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 15px;
+    margin-left: 0.5rem;
+    font-weight: var(--font-weight-1);
+}
+#header>p{
+    color: var(--dark-grayish-blue);
+    font-weight: var(--font-weight-1);
+}
+#header>p:hover {
+    cursor: pointer;
+    color: var(--blue);
+}
+
+.notification{
+    padding:0.3rem 0 ;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.notification-message{
+    display: flex;
+    width: 600px;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.profile-photo{
+    width: 40px;
+    height: 40px;
+}
+
+.bold{
+    font-weight: var(--font-weight-2);
+}
+
+.name{
+    color: var(--very-dark-blue);
+}
+.events{
+    font-weight: 700;
+}
+.notifPhoto{
+    width: 40px;
+    height: 40px;
+    margin-top: 0.7rem;
+}
+
+.privMess{
+    display: flex;
+    flex-direction: column;
+}
+
+.priv-mess-area{
+    border: 1px var(--light-grayish-blue-2) solid;
+    padding: 0.8rem;
+    color: var(--dark-grayish-blue);
+    font-weight: 500;
+    font-size: 14px;
+    width: 550px;
+}
+
+.eventDiv{
+    margin-left: 1rem
+}
+
+.agoTime{
+    color: var(--dark-grayish-blue);
+    font-size: 14px;
+    margin-top: 0.3rem;
+    font-weight: 400;
+}
+
+.priv-border{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.7rem;
+}
+.name-event{
+    color: var(--dark-grayish-blue);
+}
+
+a{
+    color: var(--blue);
+    font-weight: 800;
+    cursor: pointer;
+}
+.name:hover{
+    color: var(--blue);
+    cursor: pointer;
+}
+.events:hover{
+    color: var(--blue);
+    cursor: pointer;
+}
+img:hover{
+    cursor: pointer;
+}
+.priv-mess-area:hover{
+    cursor: pointer;
+    background-color: var(--light-grayish-blue-1);
+}
