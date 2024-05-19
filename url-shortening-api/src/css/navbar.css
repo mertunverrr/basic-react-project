@@ -1,0 +1,28 @@
+.navbar{
+    display: flex;
+    
+}
+
+#navbarEl{
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar>img{
+    width: 110px;
+    height: 35px;
+    cursor: pointer;
+}
+
+#navbarEl>li{
+    margin-left: 3rem;
+    margin-top: 0.5rem;
+    color: var(--grayish-violet);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+#navbarEl>li:hover{
+    cursor: pointer;
+    color: var(--very-dark-violet);
+}

@@ -1,0 +1,42 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+.header>img{
+    width: 750px;
+    height: 450px;
+    margin-right: -12.5rem;
+}
+
+.context-text{
+    margin-top: 2rem;
+    margin-right: 7rem;
+}
+#headerText{
+    font-weight: var(--font-weight-2);
+    font-size: 5rem;
+    line-height: 6.2rem;
+    color: var(--very-dark-blue);
+}
+#subText{
+    color: var(--grayish-violet);
+    font-weight: 500;
+    margin-top: 0.3rem;
+    font-size: 20px;
+}
+#focusBtn{
+    width: 130px;
+    padding: 0.7rem;
+    margin-top: 2rem;
+    background-color: var(--cyan);
+    border: none;
+    border-radius: 2rem;
+    font-weight: 500;
+    color: white;
+    font-size: 16px;
+}
+
+#focusBtn:hover{
+    background-color: rgb(240, 151, 88);
+}

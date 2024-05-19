@@ -1,0 +1,41 @@
+.form{
+    width: 100%;
+    padding: 2.6rem 5rem;
+    border-radius: 0.5rem;
+    background-image:url('../assets/bg-shorten-desktop.svg');
+    background-color: var(--dark-violet);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 3rem;
+}
+.form>form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.form>form>input{
+    width: 850px;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 16px;
+    color: var(--very-dark-violet);
+}
+.form>form>button{
+    width: 150px;
+    border-radius: 0.5rem;
+    background-color: var(--cyan);
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 0.7rem;
+    font-weight: 500;
+}
+
+.form>form>button:hover{
+    background-color: rgb(240, 151, 88);
+}
+
+.copy-button:hover{
+    background-color: rgb(240, 151, 88);
+}
